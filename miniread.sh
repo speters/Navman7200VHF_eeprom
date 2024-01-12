@@ -6,7 +6,7 @@ OUTPREFIX="7200_"
 
 DIR=`pwd`
 LAST=$(ls -1  $DIR/*.ihex 2>/dev/null | sed 's/.*_\([0-9]\+\).*/\1/g' | sort -n | tail -1)
-if [[ "$LAST" -eq "" ]] ; then
+if [[ "$LAST" == "" ]] ; then
 	LAST=000
 fi
 NEXT=$(printf "%03d" `expr 1 + $LAST`)
