@@ -11,9 +11,10 @@ if [[ "$LAST" == "" ]] ; then
 	LAST=000
 fi
 NEXT=$(printf "%03d" `expr 1 + $LAST`)
-echo $NEXT
 
-minipro -r ${OUTPREFIX}${NEXT}.ihex  -p ${PDEVICE}  -f ihex
+minipro -r ${OUTPREFIX}${NEXT}.ihex  -p ${PDEVICE}  -f ihex || exit 1
+
+echo $NEXT
 
 diff -q ${OUTPREFIX}${LAST}.ihex ${OUTPREFIX}${NEXT}.ihex >/dev/null
 if [ $? -eq 0 ] ; then
