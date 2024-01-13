@@ -1,18 +1,19 @@
 #!/bin/sh
 #
-#
+# call minipro to read out eeprom, write ihex file, check for changes, list changes in README.md
 
 OUTPREFIX="7200_"
+PDEVICE="24c64"
 
 DIR=`pwd`
-LAST=$(ls -1  $DIR/*.ihex 2>/dev/null | sed 's/.*_\([0-9]\+\).*/\1/g' | sort -n | tail -1)
+LAST=$(ls -1  ./*.ihex 2>/dev/null | sed 's/.*_\([0-9]\+\).*/\1/g' | sort -n | tail -1)
 if [[ "$LAST" == "" ]] ; then
 	LAST=000
 fi
 NEXT=$(printf "%03d" `expr 1 + $LAST`)
 echo $NEXT
 
-minipro -r ${OUTPREFIX}${NEXT}.ihex  -p 24c64  -f ihex
+minipro -r ${OUTPREFIX}${NEXT}.ihex  -p ${PDEVICE}  -f ihex
 
 diff -q ${OUTPREFIX}${LAST}.ihex ${OUTPREFIX}${NEXT}.ihex >/dev/null
 if [ $? -eq 0 ] ; then
