@@ -2,7 +2,7 @@
 # Navman 7200, "marine VHF EEPROM contents
 
 ## Explorative versions
-### 7200_00
+### [7200_00](7200_00.ihex)
 
   1. hold ESC+SCAN then turn on
   2. Reset DSC
@@ -71,7 +71,7 @@
   57.   88, "PORT OPS", , LO
 
 
-## 7200_001
+## [7200_001](7200_001.ihex)
 
   1. turn on
   2. Menu -> DSC -> Atis Func -> on
@@ -87,7 +87,7 @@
 +:101E50000000000505000101000000010100000173
 ```
 
-## 7200_002
+## [7200_002](7200_002.ihex)
 
   1. revert to 7200_000
   2. active channel 16 -> 15
@@ -103,7 +103,7 @@
 +:101FF000000000000000000000AA80040E0FAA00EC
 ```
 
-## 7200_003
+## [7200_003](7200_003.ihex)
 
  After power cycle, channel 16 is selected again.
 
@@ -120,7 +120,7 @@
 +:101FF000000000000000000000AA80040F0FAA00EB
 ```
 
-## 7200_004
+## [7200_004](7200_004.ihex)
 
 ```
 --- 7200_003.ihex	2024-01-12 21:07:27.308648600 +0100
@@ -138,7 +138,7 @@
 ```
 
 
-## 7200_005
+## [7200_005](7200_005.ihex)
 
   1. LO -> HI
 
@@ -155,7 +155,7 @@
 
 
 
-## 7200_008
+## [7200_008](7200_008.ihex)
 
   1. Radio Setup -> Beep Volume -> Off
 
@@ -168,7 +168,7 @@
 ```
 
 
-## 7200_009
+## [7200_009](7200_009.ihex)
 
   1. Radio Setup -> Beep Volume -> High 
 
@@ -180,7 +180,7 @@
 +:101E70000000000000002B3030302B00000000007C
 ```
 
-## 7200_010
+## [7200_010](7200_010.ihex)
 
   1. Radio Setup -> Ring Volume -> Low (was: High)
 
@@ -193,7 +193,7 @@
 ```
 
 
-## 7200_011
+## [7200_011](7200_011.ihex)
 
   1. Menu -> Local -> Local (was: Distant)
 
@@ -206,7 +206,7 @@
 ```
 
 
-## 7200_012
+## [7200_012](7200_012.ihex)
 
   1. Menu -> Backlight 5 to 4
 
@@ -219,7 +219,7 @@
 ```
 
 
-## 7200_013
+## [7200_013](7200_013.ihex)
 
   1. Menu -> Backlight 4 to 8 (HI)
 
@@ -232,7 +232,7 @@
 ```
 
 
-## 7200_014
+## [7200_014](7200_014.ihex)
 
   1. Menu -> Backlight 8 to 0 (LO)
 ```
@@ -244,7 +244,7 @@
 ```
 
 
-## 7200_015
+## [7200_015](7200_015.ihex)
 
   1. Menu -> Backlight 0 to 5
 
@@ -257,7 +257,7 @@
 ```
 
 
-## 7200_016
+## [7200_016](7200_016.ihex)
 
   1. Menu -> Contrast 5 to 4 (possible values: 0..8)
 
@@ -270,7 +270,7 @@
 ```
 
 
-## 7200_017
+## [7200_017](7200_017.ihex)
 
   1. GPS/DATA -> TIME OFFSET -> +00:30
 
@@ -283,7 +283,7 @@
 ```
 
 
-## 7200_018
+## [7200_018](7200_018.ihex)
 
   1. GPS/DATA -> TIME OFFSET -> +13:00 (max)
 
@@ -296,7 +296,7 @@
 ```
 
 
-## 7200_019
+## [7200_019](7200_019.ihex)
 
   1. GPS/DATA -> TIME OFFSET -> -00:30
 
@@ -309,7 +309,7 @@
 ```
 
 
-## 7200_020
+## [7200_020](7200_020.ihex)
 
   1. GPS/DATA -> TIME OFFSET -> -13:00 (min)
 
@@ -322,7 +322,7 @@
 ```
 
 
-## 7200_021
+## [7200_021](7200_021.ihex)
 
   1. GPS/DATA -> TIME OFFSET -> +00:00
 
@@ -335,7 +335,7 @@
 ```
 
 
-## 7200_022
+## [7200_022](7200_022.ihex)
 
   1. GPS/DATA -> TIME FORMAT -> 12h
 
@@ -348,7 +348,7 @@
 ```
 
 
-## 7200_023
+## [7200_023](7200_023.ihex)
 
   1. GPS/DATA -> TIME FORMAT -> 24h
 
@@ -361,7 +361,7 @@
 ```
 
 
-## 7200_024
+## [7200_024](7200_024.ihex)
 
   1. GPS/DATA -> TIME DISPLAY -> OFF
 
@@ -374,7 +374,7 @@
 ```
 
 
-## 7200_025
+## [7200_025](7200_025.ihex)
 
   1. GPS/DATA -> TIME DISPLAY -> ON
 
@@ -387,7 +387,7 @@
 ```
 
 
-## 7200_026
+## [7200_026](7200_026.ihex)
 
   1. GPS/DATA -> LL DISPLAY -> OFF
 
@@ -400,7 +400,7 @@
 ```
 
 
-## 7200_027
+## [7200_027](7200_027.ihex)
 
   1. GPS/DATA -> LL DISPLAY -> ON
 
@@ -413,7 +413,7 @@
 ```
 
 
-## 7200_028
+## [7200_028](7200_028.ihex)
 
   1. GPS/DATA -> COG/SOG -> ON
 
@@ -426,7 +426,7 @@
 ```
 
 
-## 7200_029
+## [7200_029](7200_029.ihex)
 
   1. GPS/DATA -> COG/SOG -> OFF
 
@@ -439,7 +439,7 @@
 ```
 
 
-## 7200_030
+## [7200_030](7200_030.ihex)
 
   1. GPS/DATA -> GPS ALERT -> OFF
 
@@ -452,7 +452,7 @@
 ```
 
 
-## 7200_031
+## [7200_031](7200_031.ihex)
 
   1. DSC SETUP -> LL REPLY -> AUTO
 
@@ -465,7 +465,7 @@
 ```
 
 
-## 7200_032
+## [7200_032](7200_032.ihex)
 
   1. DSC SETUP -> LL REPLY -> OFF
 
@@ -478,7 +478,7 @@
 ```
 
 
-## 7200_033
+## [7200_033](7200_033.ihex)
 
   1. DSC SETUP -> LL REPLY -> MANUAL
 
@@ -491,7 +491,7 @@
 ```
 
 
-## 7200_034
+## [7200_034](7200_034.ihex)
 
   1. DSC SETUP -> LL RING -> OFF
 
@@ -504,7 +504,7 @@
 ```
 
 
-## 7200_035
+## [7200_035](7200_035.ihex)
 
   1. DSC SETUP -> LL RING -> ON
 
@@ -517,7 +517,7 @@
 ```
 
 
-## 7200_036
+## [7200_036](7200_036.ihex)
 
   1. DSC SETUP -> USER MMSI -> 211257270
 
@@ -532,7 +532,7 @@
 ```
 
 
-## 7200_037
+## [7200_037](7200_037.ihex)
 
   1. DSC Setup -> Add GROUP -> Name: ABC103292114, MMSID 018976574
 
@@ -550,7 +550,7 @@
 ```
 
 
-## 7200_038
+## [7200_038](7200_038.ihex)
 
   1. DSC Setup -> Add GROUP -> Name: JBA2FPHLF3CB, MMSID 064277659
 
@@ -568,7 +568,7 @@
 ```
 
 
-## 7200_039
+## [7200_039](7200_039.ihex)
 
   1. DSC Setup -> Add GROUP -> Name: KDC AGF     , MMSID 033227300
 
@@ -586,7 +586,7 @@
 ```
 
 
-## 7200_040
+## [7200_040](7200_040.ihex)
 
   1. DSC Setup -> Delete GROUP -> Name: JBA2FPHLF3CB
 
@@ -599,7 +599,7 @@
 ```
 
 
-## 7200_041
+## [7200_041](7200_041.ihex)
 
   1. DSC Setup -> Add GROUP -> Name: ANBPEK     , MMSID 079445472
 
@@ -617,7 +617,7 @@
 ```
 
 
-## 7200_042
+## [7200_042](7200_042.ihex)
 
   1. DSC Setup -> Delete GROUP -> Name: ABC103292114
 
@@ -630,7 +630,7 @@
 ```
 
 
-## 7200_043
+## [7200_043](7200_043.ihex)
 
   1. DSC Setup -> Add GROUP -> Name: 5    , MMSID 000000000
   2. DSC Setup -> Add GROUP -> Name: 6    , MMSID 076000000
@@ -652,7 +652,7 @@
 ```
 
 
-## 7200_044
+## [7200_044](7200_044.ihex)
 
   1. DSC Setup -> Delete GROUP -> Name: 6
   2. DSC Setup -> Delete GROUP -> Name: 5
@@ -667,7 +667,7 @@
 ```
 
 
-## 7200_045
+## [7200_045](7200_045.ihex)
 
   1. Buddylist -> Add -> Name: FAITH, MMSI 211257270
 
@@ -695,7 +695,7 @@
 ```
 
 
-## 7200_046
+## [7200_046](7200_046.ihex)
 
   1. Buddylist -> Add -> Name: A, MMSI 000000000
 
@@ -718,7 +718,7 @@
 ```
 
 
-## 7200_047
+## [7200_047](7200_047.ihex)
 
   1. Buddylist -> Add -> Name: BA, MMSI 212359456
   2. Buddylist -> Add -> Name: CB, MMSI 657767120
@@ -745,7 +745,7 @@
 ```
 
 
-## 7200_048
+## [7200_048](7200_048.ihex)
 
   1. Buddylist -> Delete -> Name: A
 
@@ -762,7 +762,7 @@
 +:1016900008090A0B0C0D0E0F1200000000000000DC
 ```
 
-## 7200_049
+## [7200_049](7200_049.ihex)
 
   1. Buddylist -> Delete -> Name: CB
   2. Buddylist -> Delete -> Name: BA
@@ -781,7 +781,7 @@
 ```
 
 
-## 7200_050
+## [7200_050](7200_050.ihex)
 
   1. TRACK BUDDY -> TRACKLIST -> ADD -> Name: FAITH
 
@@ -797,7 +797,7 @@
 ```
 
 
-## 7200_051
+## [7200_051](7200_051.ihex)
 
   1. Track Buddy -> Set Buddy -> Name: FAITH -> ON
 
@@ -810,7 +810,7 @@
 ```
 
 
-## 7200_052
+## [7200_052](7200_052.ihex)
 
   1. TRACK BUDDDY -> Tracklist -> NAME: Faith -> off  (????)
   2. TRACK BUDDY -> INTERVAL -> 30min
@@ -825,7 +825,7 @@
 ```
 
 
-## 7200_053
+## [7200_053](7200_053.ihex)
 
   1. TRACK BUDDY -> INTERVAL -> 1h
 
@@ -838,7 +838,7 @@
 ```
 
 
-## 7200_054
+## [7200_054](7200_054.ihex)
 
   1. TRACK BUDDY -> INTERVAL -> 15min
 
@@ -851,7 +851,7 @@
 ```
 
 
-## 7200_055
+## [7200_055](7200_055.ihex)
 
   1. Radio Setup -> Int Speaker -> OFF
 
@@ -864,7 +864,7 @@
 ```
 
 
-## 7200_056
+## [7200_056](7200_056.ihex)
 
   1. Radio Setup -> Int Speaker -> ON
 
@@ -877,7 +877,7 @@
 ```
 
 
-## 7200_057
+## [7200_057](7200_057.ihex)
 
   1. Radio Setup -> COm Port -> NMEA -> Checksum OFF
 
@@ -890,7 +890,7 @@
 ```
 
 
-## 7200_058
+## [7200_058](7200_058.ihex)
 
   1. Radio Setup -> COm Port -> NMEA -> Checksum ON
 
@@ -903,7 +903,7 @@
 ```
 
 
-## 7200_059
+## [7200_059](7200_059.ihex)
 
   1. Radio Setup -> GPS Source -> NMEA -> OFF
 
@@ -916,7 +916,7 @@
 ```
 
 
-## 7200_060
+## [7200_060](7200_060.ihex)
 
   1. Radio Setup -> GPS Source -> NMEA -> ON
 
@@ -929,7 +929,7 @@
 ```
 
 
-## 7200_061
+## [7200_061](7200_061.ihex)
 
   1. Radio Setup -> GPS Source -> NAVBUS -> ON
 
@@ -942,7 +942,7 @@
 ```
 
 
-## 7200_062
+## [7200_062](7200_062.ihex)
 
   1. Radio Setup -> GPS Source -> NAVBUS -> OFF
 
@@ -955,7 +955,7 @@
 ```
 
 
-## 7200_063
+## [7200_063](7200_063.ihex)
 
   1. Radio Setup -> Baro & Temp -> OFF
 
@@ -968,7 +968,7 @@
 ```
 
 
-## 7200_064
+## [7200_064](7200_064.ihex)
 
   1. Radio Setup -> Baro & Temp -> ON
 
@@ -981,7 +981,7 @@
 ```
 
 
-## 7200_065
+## [7200_065](7200_065.ihex)
 
   1. Radio Setup -> Happy Fish -> OFF
 
@@ -994,7 +994,7 @@
 ```
 
 
-## 7200_066
+## [7200_066](7200_066.ihex)
 
   1. Radio Setup -> BARO SENSOR -> Baro Units -> inches-hg
 
@@ -1007,7 +1007,7 @@
 ```
 
 
-## 7200_067
+## [7200_067](7200_067.ihex)
 
   1. Radio Setup -> BARO SENSOR -> Baro Units -> millibar
 
@@ -1020,7 +1020,7 @@
 ```
 
 
-## 7200_068
+## [7200_068](7200_068.ihex)
 
   1. Radio Setup -> BARO SENSOR -> Baro Display -> LCD on
 
@@ -1033,7 +1033,7 @@
 ```
 
 
-## 7200_069
+## [7200_069](7200_069.ihex)
 
   1. Radio Setup -> BARO SENSOR -> Baro Display -> LCD off
 
@@ -1046,7 +1046,7 @@
 ```
 
 
-## 7200_070
+## [7200_070](7200_070.ihex)
 
   1. Radio Setup -> BARO SENSOR -> Baro Cal -> +00.1 Mb
 
@@ -1059,7 +1059,7 @@
 ```
 
 
-## 7200_071
+## [7200_071](7200_071.ihex)
 
   1. Radio Setup -> BARO SENSOR -> Baro Cal -> +98.7 Mb
 
@@ -1074,7 +1074,7 @@
 ```
 
 
-## 7200_072
+## [7200_072](7200_072.ihex)
 
   1. Radio Setup -> BARO SENSOR -> Baro Cal -> -98.7 Mb
 
@@ -1089,7 +1089,7 @@
 ```
 
 
-## 7200_073
+## [7200_073](7200_073.ihex)
 
   1. Radio Setup -> BARO SENSOR -> Baro Cal -> -00.1 Mb
 
@@ -1104,7 +1104,7 @@
 ```
 
 
-## 7200_074
+## [7200_074](7200_074.ihex)
 
   1. Radio Setup -> TEMPERATURE -> Units -> °F
 
@@ -1117,7 +1117,7 @@
 ```
 
 
-## 7200_075
+## [7200_075](7200_075.ihex)
 
   1. Radio Setup -> TEMPERATURE -> Units -> °C
 
@@ -1130,7 +1130,7 @@
 ```
 
 
-## 7200_076
+## [7200_076](7200_076.ihex)
 
   1. Radio Setup -> TEMPERATURE -> Cal -> +0.1°C
 
@@ -1146,7 +1146,7 @@
 ```
 
 
-## 7200_077
+## [7200_077](7200_077.ihex)
 
   1. Radio Setup -> TEMPERATURE -> Cal -> +9.9°C
 
@@ -1162,7 +1162,7 @@
 ```
 
 
-## 7200_078
+## [7200_078](7200_078.ihex)
 
   1. Radio Setup -> TEMPERATURE -> Cal -> -9.9°C
 
@@ -1178,7 +1178,7 @@
 ```
 
 
-## 7200_079
+## [7200_079](7200_079.ihex)
 
   1. Radio Setup -> TEMPERATURE -> Cal -> -0.1°C
 
@@ -1194,7 +1194,7 @@
 ```
 
 
-## 7200_080
+## [7200_080](7200_080.ihex)
 
   1. Radio Setup -> TEMPERATURE -> Cal -> +0.0°C
 
@@ -1212,7 +1212,7 @@
 ```
 
 
-## 7200_081
+## [7200_081](7200_081.ihex)
 
   1. DSC Setup -> ATIS MMSID  -> 9211105550
 
@@ -1225,7 +1225,7 @@
 ```
 
 
-## 7200_082
+## [7200_082](7200_082.ihex)
 
   1. DSC Setup -> ATIS Func -> ON
 
@@ -1241,7 +1241,7 @@
 ```
 
 
-## 7200_083
+## [7200_083](7200_083.ihex)
 
   1. DSC Setup -> ATIS Func -> OFF
 
