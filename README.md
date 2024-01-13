@@ -1,8 +1,13 @@
 
 # Navman 7200, "marine VHF EEPROM contents
 
-## Explorative versions
-### [7200_00](7200_00.ihex)
+## Exploring the EEPROM contents
+
+EEPROM changes were observed by making an adjustment in the radio, pulling the eeprom, reading its contents, and comparing it to the previous content.
+
+The layout and addresses are a bit strange. Also there are no provisions for wear-leveling. Some stuff like HI/LO changes on the radio or last used channel is written to EEPROM, but the radio does not make use of it when power-cycling.
+
+## [7200_00](7200_00.ihex)
 
   1. hold ESC+SCAN then turn on
   2. Reset DSC
@@ -11,7 +16,7 @@
   5. turn on
   6. Menu -> Reset Radio
 
-#### DSC Channels
+### DSC Channels
   1.    01, "PHONE-PORTOP", D, LO
   2.    02, "PHONE-PORTOP", D, LO
   3.    03, "PHONE-PORTOP", D, LO
