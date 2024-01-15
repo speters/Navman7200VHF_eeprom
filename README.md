@@ -838,6 +838,7 @@ The layout and addresses are a bit strange. Also there are no provisions for wea
   1. TRACK BUDDDY -> Tracklist -> NAME: Faith -> off  (????)
   2. TRACK BUDDY -> INTERVAL -> 30min
 
+```
 +++ 7200_052.ihex	2024-01-12 23:30:01.421005218 +0100
 @@ -332 +332 @@
 -:1014B0000000000007000000000000000000010024
