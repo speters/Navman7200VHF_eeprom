@@ -1,6 +1,8 @@
 
 # Navman 7200, "marine VHF EEPROM contents
 
+![ImHex screenshot](screenshot_imhex.png)
+
 ## Channels
 
 Adjusting channels should be the most interesting.
