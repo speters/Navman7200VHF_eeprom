@@ -1,12 +1,6 @@
-/*
-// ImHex pattern file for Navman 7200 EEPROM dump
-*/
-
 #include <std/core.pat>
 #include <std/string.pat>
-//#include <type/bcd.pat>
-#pragma endian big
-
+//#include <std/mem.pat>
 
 u8 num_chans = 80;
 
@@ -57,6 +51,10 @@ char productname[12] @ 0x1e8f;
 
 struct mmsi_t {
  u8 p[5] ;
+} [[sealed,format("format_mmsi")]];
+
+fn format_mmsi (ref auto mmsi) {
+    return std::format("{:2d}{:2d}{:2d}{:2d}{:d}", mmsi.p[0], mmsi.p[1], mmsi.p[2], mmsi.p[3], mmsi.p[4]/10);
 };
 
 mmsi_t mmsi @0x16ac;
@@ -83,7 +81,7 @@ u8 num_canchans @ 0xA7 [[hidden]];
 u16 chan_can_bf1[num_chans] @ 0x24c [[hidden]];
 u16 chan_can_bf2[num_chans] @ 0x45a [[hidden]];
 u16 chan_can_bf3[num_chans] @ 0x1246 [[hidden]];
-bool ll_ring_off @ 0x1E4B;
+//bool ll_ring_off @ 0x1E4B;
 
 enum Channeltype : u8 {
     unset = 0,
@@ -112,8 +110,8 @@ struct Channel_dsc_t {
     char name[12] @ addressof(chan_names_dsc) + ( std::core::array_index() * 13) 
       [[format("std::string::to_string")]]; // uppercase ASCII
     u16 bf1 @ addressof(chan_dsc_bf1) + (2*num);
-    u16 bf2 @ addressof(chan_dsc_bf2) + (2*num);
-    u16 bf3 @ addressof(chan_dsc_bf3) + (2*num);
+    u16 tunerx @ addressof(chan_dsc_bf2) + (2*num);
+    u16 tunetx @ addressof(chan_dsc_bf3) + (2*num);
     u8 bf4 @ addressof(chan_dsc_bf4) + (num/2) [[hidden]];
     u8 bf = ((num%2) ? (bf4 & 0xf) : (bf4 >> 4)) [[export]];
 };
@@ -121,12 +119,12 @@ struct Channel_dsc_t {
 struct Channel_atis_t {
     Channeltype type = Channeltype::atis [[export]];
     u32 num = u32(std::core::array_index());
-    u8 id @ (addressof(chan_num_atis) + num) ; // 01..99
+    type::NBCD<1> id @ (addressof(chan_num_atis) + num) ; // 01..99
     char name[12] @ addressof(chan_names_atis) + ( std::core::array_index() * 13)
           [[format("std::string::to_string")]]; // uppercase ASCII
     u16 bf1 @ addressof(chan_atis_bf1) + (2*num);
-    u16 bf2 @ addressof(chan_atis_bf2) + (2*num);
-    u16 bf3 @ addressof(chan_atis_bf3) + (2*num);
+    u16 tunerx @ addressof(chan_atis_bf2) + (2*num);
+    u16 tunetx @ addressof(chan_atis_bf3) + (2*num);
     u8 bf4 @ addressof(chan_atis_bf4) + (num/2) [[hidden]];
     u8 bf = ((num%2) ? (bf4 & 0xf) : (bf4 >> 4)) [[export]];
 };
